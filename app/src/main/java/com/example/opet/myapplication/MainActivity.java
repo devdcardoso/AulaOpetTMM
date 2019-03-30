@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void paraDolar(View view) {
-        String texto = "R$ %.2f";
+        String texto = "$ %.2f";
         double entrada = Double.parseDouble(editMoeda.getText().toString());
         double valor_convertido = entrada / conversao;
         textConvertido.setText(String.format(texto, valor_convertido));
